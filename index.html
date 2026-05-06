@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>★ Issaquah 3rd Reunion ★ July 18, 2026 ★</title>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <title>★ Issaquah 3rd Reunion Weekend ★ July 17-19, 2026 ★</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -242,10 +242,11 @@
     }
 
     .left-col p {
-      font-size: 1.25rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
       color: var(--text-body);
-      margin-bottom: 1.4rem;
-      line-height: 1.75;
+      margin-bottom: 1.2rem;
+      line-height: 1.8;
     }
 
     .contact-box {
@@ -265,7 +266,8 @@
     }
 
     .contact-box p {
-      font-size: 1.2rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
       color: var(--text-body);
       margin-bottom: 0.4rem;
     }
@@ -317,9 +319,12 @@
     label {
       display: block;
       color: var(--cyan);
-      font-size: 1rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
       letter-spacing: 1px;
-      margin-bottom: 4px;
+      text-transform: uppercase;
+      margin-bottom: 5px;
     }
 
     .required-star { color: var(--magenta); }
@@ -327,18 +332,16 @@
     input[type="text"],
     input[type="email"],
     input[type="tel"],
-    textarea,
-    select {
+    textarea {
       width: 100%;
       background: rgba(0, 10, 40, 0.95);
       border: 2px solid var(--purple);
       color: #fff;
-      font-family: 'VT323', monospace;
-      font-size: 1.2rem;
-      padding: 8px 12px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      padding: 9px 12px;
       outline: none;
       transition: border-color 0.2s, box-shadow 0.2s;
-      appearance: none;
     }
 
     input:focus,
@@ -352,23 +355,43 @@
       min-height: 80px;
     }
 
-    .radio-label-group {
+    /* ── EVENT DAY GROUPS ── */
+    .event-day {
+      margin-bottom: 1.2rem;
+    }
+
+    .event-day-label {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 0.55rem;
+      color: var(--yellow);
+      letter-spacing: 1px;
+      margin-bottom: 0.6rem;
+      display: block;
+      text-transform: uppercase;
+    }
+
+    .check-label-group {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       gap: 10px;
       color: var(--text-body);
       cursor: pointer;
-      font-size: 1.15rem;
-      padding: 5px 0;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      padding: 4px 0;
+      line-height: 1.4;
       transition: color 0.15s;
     }
 
-    .radio-label-group:hover { color: #fff; }
+    .check-label-group:hover { color: #fff; }
 
+    input[type="checkbox"],
     input[type="radio"] {
       accent-color: var(--magenta);
-      width: 16px;
-      height: 16px;
+      width: 15px;
+      height: 15px;
+      margin-top: 2px;
+      flex-shrink: 0;
       cursor: pointer;
     }
 
@@ -469,8 +492,8 @@
   <!-- ── TOP MARQUEE ── -->
   <div class="top-banner" aria-hidden="true">
     <div class="marquee-track">
-      <span>★ ISSAQUAH 3RD REUNION ★ ISSAQUAH 3RD REUNION ★ ISSAQUAH 3RD REUNION ★ ISSAQUAH 3RD REUNION ★ ISSAQUAH 3RD REUNION ★ ISSAQUAH 3RD REUNION ★</span>
-      <span>★ ISSAQUAH 3RD REUNION ★ ISSAQUAH 3RD REUNION ★ ISSAQUAH 3RD REUNION ★ ISSAQUAH 3RD REUNION ★ ISSAQUAH 3RD REUNION ★ ISSAQUAH 3RD REUNION ★</span>
+      <span>★ ISSAQUAH 3RD REUNION WEEKEND ★ ISSAQUAH 3RD REUNION WEEKEND ★ ISSAQUAH 3RD REUNION WEEKEND ★ ISSAQUAH 3RD REUNION WEEKEND ★ ISSAQUAH 3RD REUNION WEEKEND ★</span>
+      <span>★ ISSAQUAH 3RD REUNION WEEKEND ★ ISSAQUAH 3RD REUNION WEEKEND ★ ISSAQUAH 3RD REUNION WEEKEND ★ ISSAQUAH 3RD REUNION WEEKEND ★ ISSAQUAH 3RD REUNION WEEKEND ★</span>
     </div>
   </div>
 
@@ -484,9 +507,8 @@
     >
     <canvas id="crt-overlay" aria-hidden="true"></canvas>
     <div class="hero-text-overlay">
-      <h1 class="hero-title">Issaquah 3rd Reunion</h1>
-      <div class="hero-sub">July 18, 2026 &nbsp;·&nbsp; Wheeler Residence &nbsp;·&nbsp; Woodinville, Washington</div>
-      <div class="hero-time">5:00 PM &mdash; 10:00 PM</div>
+      <h1 class="hero-title">Issaquah 3rd<br>Reunion Weekend</h1>
+      <div class="hero-sub">July 17–19, 2026 &nbsp;·&nbsp; Wheeler Residence &nbsp;·&nbsp; Woodinville, WA</div>
     </div>
   </section>
 
@@ -513,8 +535,15 @@
             It's been 30 years since many of us roamed the halls of Issaquah High, woke up early for seminary shenanigans, or raced on the wet streets up the Plateau.
           </p>
           <p>
-            Join us for an evening of fun, memories and laughs as we get together to celebrate the moments, friends and people who shaped who we are today.
+            We'd like to invite you to a weekend of fun, memories and laughs as we get together to celebrate the moments, friends and people who shaped who we are today. The Wheelers have graciously offered their home as a gathering point and we'd love to spend as much time together as you can.
           </p>
+          <p>
+            To help us prepare, please use the RSVP form to let us know what you are interested in. Once we have some numbers on interest we'll communicate out an agenda based on interest. We're thinking eventually we'll take this to a GroupMe to plan and prepare.
+          </p>
+          <p>
+            If you need help with somewhere to stay for a night or the weekend — please reach out to Anissa. They have lots of space and want everyone to be able to come who wants to regardless of circumstances.
+          </p>
+          <p>We look forward to seeing you!</p>
 
           <div class="contact-box">
             <div class="contact-header">[ QUESTIONS? TEXT US ]</div>
@@ -528,7 +557,7 @@
           <div class="form-container">
             <h2 class="form-title">★ &nbsp;RSVP&nbsp; ★</h2>
 
-            <form id="rsvp-form" novalidate>
+            <form id="rsvp-form" action="https://formspree.io/f/xpqbrjpw" method="POST" novalidate>
 
               <div class="form-row">
                 <div class="form-group">
@@ -552,24 +581,60 @@
               </div>
 
               <div class="form-group">
-                <label>ARE YOU PLANNING TO ATTEND? <span class="required-star">*</span></label>
-                <label class="radio-label-group">
-                  <input type="radio" name="attendance" value="yes" required>
-                  Yes, I'll be there!
+                <label>SELECT ALL EVENTS YOU'RE INTERESTED IN ATTENDING</label>
+
+                <div class="event-day">
+                  <span class="event-day-label">Friday, July 17</span>
+                  <label class="check-label-group">
+                    <input type="checkbox" name="events" value="fri-temple">
+                    Temple Day — Session TBD based on interest
+                  </label>
+                  <label class="check-label-group">
+                    <input type="checkbox" name="events" value="fri-dinner">
+                    Adults Only Dinner — 6–9 PM, Location TBD
+                  </label>
+                </div>
+
+                <div class="event-day">
+                  <span class="event-day-label">Saturday, July 18</span>
+                  <label class="check-label-group">
+                    <input type="checkbox" name="events" value="sat-lunch">
+                    Lunch &amp; Games — 11 AM–5 PM, Wheeler Home
+                  </label>
+                  <label class="check-label-group">
+                    <input type="checkbox" name="events" value="sat-reunion">
+                    Class of '96 Reunion — 7 PM
+                  </label>
+                </div>
+
+                <div class="event-day">
+                  <span class="event-day-label">Sunday, July 19</span>
+                  <label class="check-label-group">
+                    <input type="checkbox" name="events" value="sun-church">
+                    Issaquah 3rd Sacrament Service — Time TBD
+                  </label>
+                  <label class="check-label-group">
+                    <input type="checkbox" name="events" value="sun-mariners">
+                    Mariners Game — First Pitch 4:10 PM
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>WOULD YOU LIKE TO BE ADDED TO AN ISSAQUAH 3RD GROUPME REGARDLESS OF YOUR ABILITY TO ATTEND?</label>
+                <label class="check-label-group">
+                  <input type="radio" name="groupme" value="yes" required>
+                  Yes
                 </label>
-                <label class="radio-label-group">
-                  <input type="radio" name="attendance" value="maybe">
-                  Maybe — fingers crossed
-                </label>
-                <label class="radio-label-group">
-                  <input type="radio" name="attendance" value="no">
-                  No (but keep me updated)
+                <label class="check-label-group">
+                  <input type="radio" name="groupme" value="no">
+                  No
                 </label>
               </div>
 
               <div class="form-group">
-                <label for="guests">+1 OR OTHER GUESTS</label>
-                <textarea id="guests" name="guests" placeholder="List anyone you'll be bringing..."></textarea>
+                <label for="notes">OTHER IDEAS, QUESTIONS OR NEEDS</label>
+                <textarea id="notes" name="notes" placeholder="Let us know anything else..."></textarea>
               </div>
 
               <button type="submit" class="submit-btn">[ SUBMIT RSVP ]</button>
@@ -577,7 +642,7 @@
 
             <div class="success-msg" id="success-msg">
               <h3>★ YOU'RE IN! ★</h3>
-              <p>Thanks for RSVPing!<br>See you July 18th.<br><br>— Adam &amp; Anissa</p>
+              <p>Thanks for RSVPing!<br>See you July 17–19.<br><br>— Adam &amp; Anissa</p>
             </div>
 
           </div>
@@ -726,30 +791,40 @@
 
 
     // ============================================================
-    // RSVP FORM — LOCAL SUCCESS STATE
-    // (To collect real responses, point the form action to
-    //  https://formspree.io/f/YOUR_ID or a Google Apps Script URL)
+    // RSVP FORM — FORMSPREE AJAX SUBMIT
     // ============================================================
     (function () {
       const form    = document.getElementById('rsvp-form');
       const success = document.getElementById('success-msg');
+      const btn     = form.querySelector('.submit-btn');
 
-      form.addEventListener('submit', function (e) {
+      form.addEventListener('submit', async function (e) {
         e.preventDefault();
 
-        // Basic validation
-        const attendance = form.querySelector('input[name="attendance"]:checked');
-        if (!attendance) {
-          alert('Please let us know if you\'re planning to attend.');
-          return;
+        btn.textContent = '[ SENDING... ]';
+        btn.disabled = true;
+
+        try {
+          const res = await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+          });
+
+          if (res.ok) {
+            form.style.display = 'none';
+            success.style.display = 'block';
+            success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          } else {
+            btn.textContent = '[ TRY AGAIN ]';
+            btn.disabled = false;
+            alert('Something went wrong. Please try again or text Adam or Anissa directly.');
+          }
+        } catch {
+          btn.textContent = '[ TRY AGAIN ]';
+          btn.disabled = false;
+          alert('Something went wrong. Please try again or text Adam or Anissa directly.');
         }
-
-        // Hide form, show success
-        form.style.display = 'none';
-        success.style.display = 'block';
-
-        // Scroll success into view on mobile
-        success.scrollIntoView({ behavior: 'smooth', block: 'center' });
       });
     })();
 
